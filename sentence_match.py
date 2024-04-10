@@ -21,3 +21,8 @@ sentence_embeddings = model.encode(sentences)
 pprint('first sentence= {}, second sentence= {}, score = {}'.format(sentences[0],sentences[4],
                                             cosine_similarity(sentence_embeddings[0].reshape(1,-1),
                                                               sentence_embeddings[4].reshape(1,-1))[0][0]))
+
+
+#output:  
+# ('first sentence=  The sun sets in the west. , second sentence=  The sun rises '
+# 'in the east. , score = 0.7677744030952454')
